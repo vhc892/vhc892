@@ -15,6 +15,7 @@ public class Main {
     private static JButton  btnStart;
     private static Board board;
 
+    
     public static void main(String[] args) {
         board = new Board();
         board.setEndGameListener(new EndGameListener() {
@@ -28,7 +29,8 @@ public class Main {
                     stopGame();
                 }
             }
-        });
+        }
+        );
 
         JPanel jPanel = new JPanel();
         BoxLayout boxLayout = new BoxLayout(jPanel,BoxLayout.Y_AXIS);
@@ -58,7 +60,8 @@ public class Main {
                     stopGame();
                 }
             }
-        });
+        }
+        );
 
         jPanel.add(board);
         jPanel.add(bottomPanel);
@@ -70,13 +73,15 @@ public class Main {
         jFrame.setResizable(true);
         jFrame.add(jPanel);
 
+        //in ra giữa màn hìnhhình
         int x =  ((int)dimension.getWidth() / 2  - (jFrame.getWidth() /2 ));
         int y = ((int) dimension.getHeight() / 2 - (jFrame.getHeight() /2));
 
         jFrame.setLocation(x, y);
-
+        
+        //co giãn vừa layout bên trong
         jFrame.pack();
-        //show ra frame
+        
         jFrame.setVisible(true);
     }
 
