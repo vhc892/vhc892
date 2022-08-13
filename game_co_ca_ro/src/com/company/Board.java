@@ -131,7 +131,7 @@ public class Board extends JPanel {
         repaint();
     }
 
-    //0: Hòa (hết nước không ai thắng cả), 1: Player hiện tại thắng, 2: Player hiện tại chưa thắng (còn nước đánh tiếp)
+    
     public int checkWin(String player, int i, int j){
 //
 
