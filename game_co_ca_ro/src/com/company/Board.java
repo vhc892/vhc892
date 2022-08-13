@@ -18,7 +18,7 @@ public class Board extends JPanel {
     public static final int ST_WIN = 1;
     public static final int ST_NORMAL = 2;
 
-    //0: Hòa (hết nước không ai thắng cả), 1: Player hiện tại thắng, 2: Player hiện tại chưa thắng (còn nước đánh tiếp)
+   
 
     private EndGameListener endGameListener;
     private Image imgX;
