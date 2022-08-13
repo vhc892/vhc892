@@ -19,7 +19,6 @@ public class Board extends JPanel {
     public static final int ST_NORMAL = 2;
 
    
-
     private EndGameListener endGameListener;
     private Image imgX;
     private Image imgO;
@@ -81,7 +80,8 @@ public class Board extends JPanel {
         try{
             imgX = ImageIO.read(getClass().getResource("x.png"));
             imgO = ImageIO.read(getClass().getResource("o.png"));
-        }catch (Exception e){
+        }
+        catch (Exception e){
             e.printStackTrace();
         }
     }
@@ -242,8 +242,7 @@ public class Board extends JPanel {
         Graphics2D graphic2d = (Graphics2D) g;
 
 
-
-        for (int i = 0; i < N; i++){
+            for (int i = 0; i < N; i++){
             int k = i;
             for (int j = 0; j < M; j++){
                 int x = j * w;
